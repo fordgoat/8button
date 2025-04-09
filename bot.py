@@ -77,19 +77,19 @@ class Bot(Client):
                 if not link:
                     await self.export_chat_invite_link(FORCESUB_CHANNEL)
                     link = (await self.get_chat(FORCESUB_CHANNEL)).invite_link
-                self.invitelink = link
+                self.invitelink4 = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning("Bot tidak dapat Mengambil link invite dari FORCE_SUB_CHANNEL4!")
                 self.LOGGER(__name__).warning(f"Pastikan @{self.username} adalah admin di Channel Tersebut, Chat ID F-Subs Channel Saat Ini: {FORCESUB_CHANNEL4}")
                 self.LOGGER(__name__).info("\nBot Berhenti. Gabung Group https://t.me/SharingUserbot untuk Bantuan")
                 sys.exit()       
-        if FORCESUB_CHANNEL5:
+        if FORCESUB_CHANNEL:
             try:
-                link = (await self.get_chat(FORCESUB_CHANNEL5)).invite_link
+                link = (await self.get_chat(FORCESUB_CHANNEL)).invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCESUB_CHANNEL5)
-                    link = (await self.get_chat(FORCESUB_CHANNEL5)).invite_link
+                    await self.export_chat_invite_link(FORCESUB_CHANNEL)
+                    link = (await self.get_chat(FORCESUB_CHANNEL)).invite_link
                 self.invitelink5 = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
@@ -97,12 +97,12 @@ class Bot(Client):
                 self.LOGGER(__name__).warning(f"Pastikan @{self.username} adalah admin di Channel Tersebut, Chat ID F-Subs Channel Saat Ini: {FORCESUB_CHANNEL5}")
                 self.LOGGER(__name__).info("\nBot Berhenti. Gabung Group https://t.me/SharingUserbot untuk Bantuan")
                 sys.exit()       
-        if FORCESUB_CHANNEL6:
+        if FORCESUB_CHANNEL:
             try:
-                link = (await self.get_chat(FORCESUB_CHANNEL6)).invite_link
+                link = (await self.get_chat(FORCESUB_CHANNEL)).invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCESUB_CHANNEL6)
-                    link = (await self.get_chat(FORCESUB_CHANNEL6)).invite_link
+                    await self.export_chat_invite_link(FORCESUB_CHANNEL)
+                    link = (await self.get_chat(FORCESUB_CHANNEL)).invite_link
                 self.invitelink6 = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
