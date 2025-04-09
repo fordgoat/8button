@@ -32,12 +32,12 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://ucik:ucik@cluster0.0l3r8.
 DB_NAME = os.environ.get("DATABASE_NAME", "becek")
 
 #force sub channel id, if you want enable force sub
-FORCESUB_CHANNEL = int(os.environ.get("FORCESUB_CHANNEL", "-1002152814009"))
-FORCESUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "-1002016674650"))
-FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL3", "-1001969547450"))
-FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL4", "-1001969547450"))
-FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL5", "-1001969547450"))
-FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL6", "-1001969547450"))
+FORCESUB_CHANNEL = int(os.environ.get("FORCESUB_CHANNEL", "-1001721745890"))
+FORCESUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "-1002320116756"))
+FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL3", "-1002398954973"))
+FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL4", "-1002065151503"))
+FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL5", "-1001979450020"))
+FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL6", "-1001979450020"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
