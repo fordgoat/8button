@@ -71,13 +71,13 @@ class Bot(Client):
                 self.LOGGER(__name__).warning(f"Pastikan @{self.username} adalah admin di Channel Tersebut, Chat ID F-Subs Channel Saat Ini: {FORCESUB_CHANNEL3}")
                 self.LOGGER(__name__).info("\nBot Berhenti. Gabung Group https://t.me/SharingUserbot untuk Bantuan")
                 sys.exit()       
-        if FORCESUB_CHANNEL4:
+        if FORCESUB_CHANNEL:
             try:
-                link = (await self.get_chat(FORCESUB_CHANNEL4)).invite_link
+                link = (await self.get_chat(FORCESUB_CHANNEL)).invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCESUB_CHANNEL4)
-                    link = (await self.get_chat(FORCESUB_CHANNEL4)).invite_link
-                self.invitelink4 = link
+                    await self.export_chat_invite_link(FORCESUB_CHANNEL)
+                    link = (await self.get_chat(FORCESUB_CHANNEL)).invite_link
+                self.invitelink = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning("Bot tidak dapat Mengambil link invite dari FORCE_SUB_CHANNEL4!")
